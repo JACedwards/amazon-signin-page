@@ -32,6 +32,10 @@
     background-image: linear-gradient(to top, rgb(230, 171, 9) , rgba(230, 171, 9, 0.568)); 
 }
 
+#continue-gradient:hover{
+  background-image: linear-gradient(to top, rgb(205, 152, 5) , rgba(196, 145, 5, 0.568)); 
+}
+
 /* drop down attempt starts */
 
 .dropbtn {
