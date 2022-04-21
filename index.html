@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Amazon Sign-in</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  
+  
+  <body style="font-family:Arial, Helvetica, sans-serif;">
+    <div>
+      <img src="images/amazon_logo_705x346.jpg" alt="Amazon Logo" class="center-image">
+    </div>
+
+    <div class="gray-border" style="height:400px">
+
+      <div class="flexbox-container">
+          
+        <div class="flexbox-item flexbox-item-1">
+          <p style="font-size:40px">Sign-In</p>
+        </div>
+        
+        <div class="flexbox-item flexbox-item-2">
+          <form action="">
+            <label for="email" style="font-size:18px"><b>Email or mobile phone number</b></label>
+            <br>
+            <input type="email" id="email" name="email" style="width: 420px;height:40px;border-radius:5px;border-width:1px; border-color:lightgray">
+          </form> 
+        </div>
+        <br>
+        <div class="flexbox-item flexbox-item-3">
+          <form action="">
+            <input type="submit" value="Continue" id="continue-gradient" style="width:420px;height:40px;border-radius:5px;border-width:1px; border-color:lightgray;font-size:18px">
+          </form>
+        </div>
+        <br>
+        <div class="flexbox-item flexbox-item-4" style="padding-right:40px">
+          <p style="font-size:16px">By continuing, you agree to Amazon's <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">Conditions of Use</a> 
+             <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice</a>.</p>
+        </div>
+        
+        <!-- dropdown attempt starts -->
+        
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Need help?</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Dnav_signin&prevRID=4207RJQ3CBAM3WQ0E8CY&openid.assoc_handle=usflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Forgot your password?</a>
+            <a href="https://www.amazon.com/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">Other issues with Sign-in</a>
+          </div>
+        </div>
+
+        <!-- dropdown attempt stops -->
+        
+      </div>
+    </div>
+
+    <!-- Gray box ends -->
+    <!-- New to Amazon section begins -->
+
+    <br>
+    <div class="new-to-amazon">
+      <p style="color:gray; font-size:20px">New to Amazon?</p>
+    </div>
+    
+    <div class="new-to-amazon">
+      <form action="">
+        <input type="submit" value="Create your Amazon Account"  style="width:480px;height:40px;border-radius:5px;border-width:1px; border-color:lightgray;font-size:22px">
+      </form>
+    </div>
+    
+    <br>
+    <br>
+
+    <div id="footer-fill">
+    </div>
+       
+    <div id="footer">
+      <div class="footer-links">
+        <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">Conditions of Use</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.amazon.com/help">Help</a>
+      </div>
+    </div>
+
+    <br>
+    <div class="new-to-amazon">
+      <p style="color:rgb(85,85,85); font-size:20px">&copy; 1996-2022, Amazon.com, Inc. or its affiliates</p>
+    </div>
+    
+  
+
+  
+    
+      <!-- dropdown script starts -->
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+    <!-- dropdown script stops -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>

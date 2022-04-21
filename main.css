@@ -1,0 +1,105 @@
+.flexbox-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-start;
+      
+    justify-content: center;
+
+    
+}
+
+.gray-border{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    width: 480px;
+    margin:auto;
+}
+
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 112px
+}
+
+.flexbox-item{
+    padding-left: 30px;
+
+}
+
+#continue-gradient{
+    background-image: linear-gradient(to top, rgb(230, 171, 9) , rgba(230, 171, 9, 0.568)); 
+}
+
+/* drop down attempt starts */
+
+.dropbtn {
+    
+    color: rgb(61, 140, 209);
+    padding-left: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    text-decoration-line:underline;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    overflow: auto;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:rgb(61, 140, 209);
+    padding-left: 30px;
+    text-decoration-line:underline;
+    display: block;
+    width: 400px;
+  }
+  
+  
+  
+  .show {display: block;}
+/* drop down attempt stops */
+
+.new-to-amazon{
+    width: 480px;
+    margin:auto;
+    text-align:center; 
+}
+
+
+#footer-fill{
+    height: 7px;
+    width: 100%;
+    background-image: radial-gradient(rgba(238,238,238,1) 45%, rgba(238,238,238,0.5) 30%, rgba(238,238,238,0) 10%);
+}
+
+#footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+.footer-links{
+    padding-right: 26px;
+    padding-left: 26px;
+    font-size: 19px
+}
